@@ -11,7 +11,7 @@ const pool = new Pool({
 });
 
 // A helper function to test the database connection
-export async function testConnection() {
+export async function connectPG() {
   try {
     const client = await pool.connect();
     console.log('Successfully connected to PostgreSQL!');
